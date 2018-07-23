@@ -1,0 +1,140 @@
+#sliderThem1 {
+    background-image: url(img/1.jpg);
+}
+
+#sliderThem2 {
+    background-image: url(img/2.jpg);
+}
+
+#sliderThem3 {
+    background-image: url(img/3.jpg);
+}
+
+#sliderThem4 {
+    background-image: url(img/4.jpg);
+}
+
+#sliderThem5 {
+    background-image: url(img/5.jpg);
+}
+
+#sliderThem6 {
+    background-image: url(img/6.jpg);
+}
+
+
+
+.sliderScreen {
+    
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 80%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #3e3c3c;
+    -webkit-box-shadow: 2px 2px 28px -4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 2px 2px 28px -4px rgba(0,0,0,0.63);
+    box-shadow: 2px 2px 28px -4px rgba(0,0,0,0.63);
+    margin-top: 5vw;
+}
+
+.sliderScreen:hover > div:first-child, .sliderScreen:hover > div:last-child {
+    display: block;
+}
+
+.sliderScreen > div:first-child,
+.sliderScreen > div:last-child {
+    
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgba(214, 214, 214, 0.57);
+    z-index: 11;
+    height: 24%;
+    width: 35px;
+    background-color: rgba(239, 239, 239, 0.44);
+    opacity: 0.6;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    transition: width 100ms ease, opacity 700ms ease;
+}
+
+.sliderScreen > div:first-child {
+    left: -1px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-left: 0px solid;
+    background-image: url(img/arrow-left.png);
+    background-position: center right;
+}
+
+.sliderScreen > div:first-child:hover {
+    opacity: 1;
+    width: 55px;
+}
+
+.sliderScreen > div:last-child {
+    right: -1px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-left: 0px solid;
+    background-image: url(img/arrow-right.png);
+    background-position: center left;
+}
+
+.sliderScreen > div:last-child:hover {
+    opacity: 1;
+    width: 55px;
+}
+.slideBox {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    width: 15000px;
+    height: 100%;
+}
+
+.sliderThem {
+    
+    height: 100%;
+    width: 800px;
+    float: left;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circleBox {
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    z-index: 10;
+}
+
+.circle {
+    
+    width: 22px;
+    height: 22px;
+    background-color: #1f3e65;
+    border-radius: 26px;
+    border: 1px solid rgba(11, 11, 11, 0.29);
+    float: left;
+    margin-left: 7px;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: brightness(150%) grayscale(50%);
+}
+
+#circle1 {
+    opacity: 1;
+}
+.circle:hover {
+    
+    filter: saturate(70%) grayscale(0%);
+    opacity: 1;
+}

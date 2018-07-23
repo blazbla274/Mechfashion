@@ -1,0 +1,467 @@
+:root {
+  --box-size: 250px;
+  --box-margin: 2px;
+  --box-quantity: 22;
+}
+
+body {
+    
+    background: #313131;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; 
+}
+
+.container {
+    
+    width: calc((var(--box-size) + var(--box-margin) * 2) * 4);
+    height: 1524px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 200ms all ease;
+}
+
+h1 {
+    
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #c2c6cc;
+    font-size: 25px;
+}
+
+h2 {
+    
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #dadee3;
+    margin: auto;
+    margin-bottom: 100px;
+    display: block;
+    width: 55%;
+}
+
+@media all and (max-width: 1016px) { /*Jeżeli nie zmieszczą się 4 boxy*/
+    
+    .container {
+        width: calc((var(--box-size) + var(--box-margin) * 2) * 3);
+        height: 2032px;
+    }
+}
+
+@media all and (max-width: 762px) { /*Jeżeli nie zmieszczą się 3 boxy*/
+    
+    .container {
+        width: calc((var(--box-size) + var(--box-margin) * 2) * 2);
+        height: 2794;
+    }
+}
+
+@media all and (max-width: 508px) { /*Jeżeli nie zmieszczą się 2 boxy*/
+    
+    .container {
+        width: calc(var(--box-size) + var(--box-margin) * 2);
+        height: 5588px;
+    }
+}
+
+.box {
+    
+    width: var(--box-size);
+    height: var(--box-size);
+    margin: var(--box-margin);
+    float: left;
+    background: cover;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.33);
+    filter: contrast(90%);
+}
+
+.box::after {
+    
+    clear: both;
+}
+
+.box > div {
+    
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 23px;
+    font-family: 'Varela', sans-serif;
+    opacity: 0;
+    transition: 400ms all ease;
+}
+
+.box:hover > div {
+    
+    opacity: 1;
+}
+
+.topBox {
+    
+    width: 100%;
+    height: 170px;
+    background: #091b34;
+    border-bottom: 1px solid #7a9ccb;
+    margin-bottom: 110px;
+}
+
+.topBox > div {
+    
+    width: 400px;
+    height: 100%;
+    background-image: url(img/Logo%20MECH%20Fashion%20WHITE.png);
+    background-size: cover;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -16px);
+}
+
+.topBox > div > a {
+ 
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/*Przydział koloró*/
+
+.box.id1 {
+    background: url("img/ColorGallery/Polyester/1. Black.png");
+} 
+.box.id2 {
+    background: url("img/ColorGallery/Polyester/2. Gray.png");
+}
+.box.id3 {
+    background: url("img/ColorGallery/Polyester/3. Navy.png");
+}
+.box.id4 {
+    background: url("img/ColorGallery/Polyester/4. Cornflower.png");
+}
+.box.id5 {
+    background: url("img/ColorGallery/Polyester/5. Light blue.jpg");
+}
+.box.id6 {
+    background: url("img/ColorGallery/Polyester/6. Orange.png");
+}
+.box.id7 {
+    background: url("img/ColorGallery/Polyester/7. Red.png");
+}
+.box.id8 {
+    background: url("img/ColorGallery/Polyester/8. Light beige.png");
+}
+.box.id9 {
+    background: url("img/ColorGallery/Polyester/9. Brown.png");
+}
+.box.id10 {
+    background: url("img/ColorGallery/Polyester/10. Light green.png");
+}
+.box.id11 {
+    background: url("img/ColorGallery/Polyester/11. Light gray.png");
+}
+.box.id12 {
+    background: url("img/ColorGallery/Polyester/12. Burgundy.png");
+}
+.box.id13 {
+    background: url("img/ColorGallery/Polyester/13. Bordeaux.png");
+}
+.box.id14 {
+    background: url("img/ColorGallery/Polyester/14. Turquoise.png");
+}
+.box.id15 {
+    background: url("img/ColorGallery/Polyester/15. Dark purple.png");
+}
+.box.id16 {
+    background: url("img/ColorGallery/Polyester/16. Purple.png");
+}
+.box.id17 {
+    background: url("img/ColorGallery/Polyester/17. Green.png");
+}
+.box.id18 {
+    background: url("img/ColorGallery/Polyester/18. Pink.png");
+}
+.box.id19 {
+    background: url("img/ColorGallery/Polyester/19. Raspberry.jpg");
+}
+.box.id20 {
+    background: url("img/ColorGallery/Polyester/20. Yellow.jpg");
+}
+.box.id21 {
+    background: url("img/ColorGallery/Polyester/21. Mint.png");
+}
+.box.id22 {
+    background: url("img/ColorGallery/Polyester/22. White.jpg");
+}
+
+/*-----------------------*/
+
+
+.box.idF1 {
+    background: url("img/ColorGallery/Fleece/1.%20Black.jpg");
+    background-position: 0px;
+} 
+.box.idF2 {
+    background: url("img/ColorGallery/Fleece/2.%20Gray.jpg");
+    background-position: 0px;
+} 
+.box.idF3 {
+    background: url("img/ColorGallery/Fleece/3.%20Light%20gray.jpg");
+    background-position: 0px;
+}
+.box.idF4 {
+    background: url("img/ColorGallery/Fleece/4.%20Red.jpg");
+    background-position: 0px;
+} 
+.box.idF5 {
+    background: url("img/ColorGallery/Fleece/5.%20Orange.jpg");
+    background-position: 0px;
+} 
+.box.idF6 {
+    background: url("img/ColorGallery/Fleece/6.%20Yellow.jpg");
+    background-position: 0px;
+} 
+.box.idF7 {
+    background: url("img/ColorGallery/Fleece/7.%20Navy.jpg");
+    background-position: 0px;
+} 
+.box.idF8 {
+    background: url("img/ColorGallery/Fleece/8.%20Pink.jpg");
+    background-position: 0px;
+} 
+.box.idF9 {
+    background: url("img/ColorGallery/Fleece/9.Cornflower.jpg");
+    background-position: 0px;
+} 
+.box.idF10 {
+    background: url("img/ColorGallery/Fleece/10.%20Dark%20purple.jpg");
+    background-position: 0px;
+} 
+.box.idF11 {
+    background: url("img/ColorGallery/Fleece/11.%20Purple.jpg");
+    background-position: 0px;
+} 
+.box.idF12 {
+    background: url("img/ColorGallery/Fleece/12.%20Amaranth.jpg");
+    background-position: 0px;
+} 
+.box.idF13 {
+    background: url("img/ColorGallery/Fleece/13.%20Burgundy.jpg");
+    background-position: 0px;
+} 
+.box.idF14 {
+    background: url("img/ColorGallery/Fleece/14.%20Mint.jpg");
+    background-position: 0px;
+} 
+.box.idF15 {
+    background: url("img/ColorGallery/Fleece/15.%20Teal.jpg");
+    background-position: 0px;
+} 
+.box.idF16 {
+    background: url("img/ColorGallery/Fleece/16.%20Turquoise.jpg");
+    background-position: 0px;
+} 
+.box.idF17 {
+    background: url("img/ColorGallery/Fleece/17.%20Light%20blue.jpg");
+    background-size: 100% 100%;
+} 
+.box.idF18 {
+    background: url("img/ColorGallery/Fleece/18.%20Green.jpg");
+    background-position: 0px;
+} 
+.box.idF19 {
+    background: url("img/ColorGallery/Fleece/19.%20Brown.jpg");
+    background-position: 0px;
+} 
+.box.idF20 {
+    background: url("img/ColorGallery/Fleece/20.%20Beige.jpg");
+    background-position: 0px;
+} 
+.box.idF21 {
+    background: url("img/ColorGallery/Fleece/21.%20Camel.jpg");
+    background-position: 0px;
+} 
+.box.idF22 {
+    background: url("img/ColorGallery/Fleece/22.%20Light%20green.jpg");
+    background-position: 0px;
+    background-size: 100% 100%;
+} 
+
+
+
+
+
+.footer {
+    
+    position: relative;
+    height: 900px;
+    background-color: #091b34;
+    background: radial-gradient(farthest-side at 50% 35%,#0b1e39, #091b34);
+    border-top: 2px solid #627ea5;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer > a {
+    
+    line-height: 300px;
+    display: inline-block;
+    font-size: 16px;
+    color: #677281;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+form {
+    
+    width: 20vw;
+    min-width: 250px;
+    position: absolute;
+    transform: translate(-50%,-70%);
+    left: 50%;
+    top: 50%;
+    background-color: #051224;
+    padding: 35px;
+    border-radius: 3px;
+    border: 1px solid #627ea5;
+    color: #8caad4;
+}
+
+form > label, form > textarea, form > input {
+    
+    display: block;
+    text-align: left;
+}
+
+form > label {
+    
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+form > label > span {
+    
+    color: red;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+form > label:first-child {
+    
+    margin-top: 0px;
+
+}
+
+input:focus {
+    
+    outline: none;
+}
+
+form > input {
+    
+    border-radius: 3px;
+    border: 1px solid #1e252f;
+    width: 100%;
+    padding: 10px;
+    background-color: #8caad4;
+    font-size: 15px;
+}
+
+form > input:focus {
+    
+    background-color: #92b1db;
+}
+
+#submit {
+    
+    margin-top: 20px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #091b34;
+    color: #7696c3;
+    border: 1px solid #627ea5;
+}
+
+#submit:hover { 
+    
+    cursor: pointer;
+}
+
+textarea:focus {
+    
+    background-color: #92b1db; 
+    outline: none;
+}
+
+form > textarea {
+
+    border: 1px solid #1e252f;
+    border-radius: 4px;
+    width: 100%;
+    height: 160px;
+    background-color: #8caad4;
+    resize: none;
+    font-size: 16px;
+    color: #0f0e0f;
+    text-indent: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; 
+}
+
+.footerEnd {
+    
+    border-top: 1px solid #1d2633;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #06152a;
+}
+
+.footerEnd > a {
+    
+    line-height: 200px;
+    display: inline-block;
+    font-size: 16px;
+    color: #677281;
+    cursor: text;
+}
+
+.sendingRaport {
+    
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    line-height: 125px;
+    height: 0px;
+    padding 50px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid #7a9ccb;
+    border-radius: 2px;
+    opacity: 0.85;
+    overflow: hidden;
+}
+
+.sendingRaport.good {
+    
+    background-color: #3fd668;
+}
+
+.sendingRaport.bad {
+    
+    background-color: #ff3636;
+}
